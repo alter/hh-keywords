@@ -85,7 +85,7 @@ end
 #input: keywords, output: only useful keywords, without trash
 def clean_array( keywords )
   keywords.map!{|keyword| keyword.downcase.strip}
-  blacklist = %w{ 000 do we from other like working web data and 00 to you your our on in the of for ru }
+  blacklist = %w{ 000 do we from as other like working web data and 00 to you your our on in the of for ru }
 
   keywords.each do |keyword|
     keywords.delete( keyword ) if keyword.empty?
