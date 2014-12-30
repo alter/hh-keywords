@@ -1,0 +1,3 @@
+# install ruby gems
+gem install ap json nokogiri faraday faraday-cookie_jar
+
